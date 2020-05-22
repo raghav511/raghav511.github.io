@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tictac.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap"
+      rel="stylesheet"
+    />
+    <script src="jquery.js"></script>
+    <script src="tictac.js" defer></script>
+    <title>tictac</title>
+  </head>
+
+  <body>
+    <header style="font-size: 3rem;">Tic Tac Toe</header>
+    <h3 id="player" style="margin-left: 50%; float: left;"></h3>
+    <!-- created a grid -->
+    <div class="grid">
+      <div style="color: red;" class="box" onclick="play(this,1)">&nbsp;</div>
+      <div style="color: red;" class="box" onclick="play(this,2)">&nbsp;</div>
+      <div style="color: red;" class="box" onclick="play(this,4)">&nbsp;</div>
+      <div style="color: red;" class="box" onclick="play(this,8)">&nbsp;</div>
+      <div style="color: red;" class="box" onclick="play(this,16)">&nbsp;</div>
+      <div style="color: red;" class="box" onclick="play(this,32)">&nbsp;</div>
+      <div style="color: red;" class="box" onclick="play(this,64)">&nbsp;</div>
+      <div style="color: red;" class="box" onclick="play(this,128)">&nbsp;</div>
+      <div style="color: red;" class="box" onclick="play(this,256)">&nbsp;</div>
+    </div>
+  </body>
+</html>

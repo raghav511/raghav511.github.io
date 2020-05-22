@@ -1,0 +1,36 @@
+html {
+  background-color: white;
+  font-family: "Bad Script", cursive;
+  text-align: center;
+  user-select: none;
+  margin: inherit;
+}
+body {
+  background-color: #2d545e;
+  width: 700px;
+  height: auto;
+  text-align: center;
+  margin: inherit;
+}
+
+.grid {
+  /* margin-top: 100px; */
+  display: grid;
+  width: 350px;
+  height: 350px;
+  margin: inherit;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  font-size: 2.75rem;
+  font-weight: 300;
+}
+
+.box {
+  border-radius: 5px;
+  border: chocolate 2px solid;
+  background-color: #76c1d4;
+}
+span {
+  color: crimson;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap"
+      rel="stylesheet"
+    />
+    <title>tic tac</title>
+    <script src="jquery.js" defer></script>
+    <script src="tictac.js" defer></script>
+  </head>
+
+  <body>
+    <h1>tictac</h1>
+    <form action="#" method="get">
+      <h3>Enter player1 name</h3>
+      <input
+        type="text"
+        name="player1"
+        id="player1"
+        placeholder="enter your name"
+      />
+      <h3>Enter player2 name</h3>
+      <input
+        type="text"
+        name="player2"
+        id="player2"
+        placeholder="enter you name"
+      />
+      <input type="button" value="enter the game" onclick="startGame()" />
+    </form>
+    <script>
+      function startGame() {
+        window.location.assign("board.html");
+        var name1 = document.getElementById("player1").value;
+        localStorage.setItem("player1", name1);
+        var name2 = document.getElementById("player2").value;
+        localStorage.setItem("player2", name2);
+      }
+    </script>
+  </body>
+</html>
